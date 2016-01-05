@@ -1,0 +1,7 @@
+div[isteven-multi-select] > span > button {
+    width: 400px;
+}
+
+div[isteven-multi-select] .checkboxLayer {
+    width: 400px;
+}

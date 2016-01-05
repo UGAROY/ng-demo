@@ -1,0 +1,17 @@
+.search-box input {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    max-width: 0;
+    visibility: hidden;
+    margin-left: 5px;
+}
+
+.search-box input:not(.focus) {
+    margin-left: -12px;
+}
+
+.search-box input.focus {
+    max-width: 130px;
+    visibility: visible;
+}
