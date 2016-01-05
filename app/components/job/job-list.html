@@ -1,29 +1,41 @@
-<div>
-  <h2>任务列表</h2>
-  <hr>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="username">创建者:</label>
-      <input type="text" class="form-control" id="username" ng-model="search.filter">
-      <!--<search-box search="search.filter"></search-box>-->
-    </div>
-  </form>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <strong class="panel-title">任务列表</strong>
+  </div>
+  <div class="panel-body">
 
-  <table
-      class="table table-striped table-hover">
-    <thead>
-    <tr>
-      <th></th>
-      <th>任务名</th>
-      <th>用户名</th>
-      <th>创建时间</th>
-      <th>进度</th>
-      <th>操作</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="clicky" ng-repeat="job in jobs | filter: search.filter">
-      <td>
+    <div class="search-section container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="input-group">
+            <span class="input-group-addon" id="search-addon">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索创建者..." aria-describedby="search-addon"
+                   ng-model="search.filter">
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+
+
+    <table class="task-list-table table table-striped table-hover">
+      <thead>
+      <tr>
+        <th></th>
+        <th>任务名</th>
+        <th>用户名</th>
+        <th>创建时间</th>
+        <th>进度</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="clicky" ng-repeat="job in jobs | filter: search.filter">
+        <td>
         <span ng-if="job.progress==100" class="badge alert-success">
             <i class="glyphicon glyphicon-thumbs-up"></i>
         </span>
@@ -31,27 +43,28 @@
               class="badge alert-warning">
             <i class="glyphicon glyphicon-transfer"></i>
         </span>
-      </td>
-      <td>
-        <strong>{{job.name}}</strong>
-      </td>
-      <td>
-        {{job.username}}
-      </td>
-      <td class="date_col">
-        {{job.startDate | date: 'yyyy-MM-dd HH:mm:ss'}}
-      </td>
-      <td class="progress_bar_col">
-        <div>
-          <uib-progressbar class="progress-striped active" max="100" value="job.progress"><i>{{job.progress}}%
-          </i></uib-progressbar>
-        </div>
-      </td>
-      <td>
-        <button type="button" class="btn btn-primary">查看任务</button>
-      </td>
-    </tr>
-    </tbody>
-  </table>
+        </td>
+        <td>
+          <strong>{{job.name}}</strong>
+        </td>
+        <td>
+          {{job.username}}
+        </td>
+        <td class="date_col">
+          {{job.startDate | date: 'yyyy-MM-dd HH:mm:ss'}}
+        </td>
+        <td class="progress_bar_col">
+          <uib-progressbar
+              class="progress-striped active" max="100"
+              value="job.progress" type="{{job.progress==100 ? 'success': 'warning'}}"><i>{{job.progress}}%</i>
+          </uib-progressbar>
+        </td>
+        <td>
+          <button type="button" class="btn btn-primary">查看任务</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 
 </div>

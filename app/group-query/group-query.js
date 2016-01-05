@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('indexApp.group-query', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+  $routeProvider.when('/group-query', {
+    templateUrl: 'group-query/group-query.html',
+    controller: 'GroupQueryCtrl'
   });
 }])
 
-.controller('View1Ctrl', ['$scope', function($scope) {
+.controller('GroupQueryCtrl', ['$scope', function($scope) {
   $scope.ages = ['0-18', '18-23', '24-30', '31-40', '41-50', '>50', '未知'];
 
   $scope.mobiles = [
