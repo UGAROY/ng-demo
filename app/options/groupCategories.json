@@ -1,0 +1,162 @@
+[
+  {
+    "value": "news_society",
+    "name": "社会"
+  },
+  {
+    "value": "news_finance",
+    "name": "财经"
+  },
+  {
+    "value": "news_local",
+    "name": "本地"
+  },
+  {
+    "value": "news_entertainment",
+    "name": "娱乐"
+  },
+  {
+    "value": "news_politics",
+    "name": "国内"
+  },
+  {
+    "value": "news_world",
+    "name": "国际"
+  },
+  {
+    "value": "news_health",
+    "name": "健康"
+  },
+  {
+    "value": "news_car",
+    "name": "汽车"
+  },
+  {
+    "value": "news_tech",
+    "name": "科技"
+  },
+  {
+    "value": "news_travel",
+    "name": "旅游"
+  },
+  {
+    "value": "news_sports",
+    "name": "体育"
+  },
+  {
+    "value": "news_culture",
+    "name": "文化"
+  },
+  {
+    "value": "news_fashion",
+    "name": "时尚"
+  },
+  {
+    "value": "news_edu",
+    "name": "教育"
+  },
+  {
+    "value": "news_food",
+    "name": "美食"
+  },
+  {
+    "value": "news_house",
+    "name": "房地产"
+  },
+  {
+    "value": "news_military",
+    "name": "军事"
+  },
+  {
+    "value": "news_history",
+    "name": "历史"
+  },
+  {
+    "value": "news_astrology",
+    "name": "星座"
+  },
+  {
+    "value": "emotion",
+    "name": "情感"
+  },
+  {
+    "value": "digital",
+    "name": "数码"
+  },
+  {
+    "value": "news_game",
+    "name": "游戏"
+  },
+  {
+    "value": "news_regimen",
+    "name": "养生"
+  },
+  {
+    "value": "fitness",
+    "name": "减肥"
+  },
+  {
+    "value": "news_comic",
+    "name": "动漫"
+  },
+  {
+    "value": "business",
+    "name": "商业"
+  },
+  {
+    "value": "news_weather",
+    "name": "天气"
+  },
+  {
+    "value": "news_lady",
+    "name": "女性"
+  },
+  {
+    "value": "news_home",
+    "name": "家居"
+  },
+  {
+    "value": "government",
+    "name": "政务"
+  },
+  {
+    "value": "positive",
+    "name": "正能量"
+  },
+  {
+    "value": "news_law",
+    "name": "法律"
+  },
+  {
+    "value": "news_life",
+    "name": "生活"
+  },
+  {
+    "value": "career",
+    "name": "职场"
+  },
+  {
+    "value": "news_baby",
+    "name": "育儿"
+  },
+  {
+    "value": "news_nature",
+    "name": "自然"
+  },
+  {
+    "value": "news_shopping",
+    "name": "购物"
+  },
+  {
+    "value": "movie",
+    "name": "电影"
+  },
+  {
+    "value": "rumor",
+    "name": "辟谣"
+  },
+  {
+    "value": "funny",
+    "name": "搞笑"
+  }
+]

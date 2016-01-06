@@ -1,0 +1,66 @@
+[
+  {
+    "value": "groups_count",
+    "name": "文章数"
+  },
+  {
+    "value": "read_count",
+    "name": "阅读数"
+  },
+  {
+    "value": "long_stay_count",
+    "name": "有效阅读数"
+  },
+  {
+    "value": "like_count",
+    "name": "喜欢数"
+  },
+  {
+    "value": "dislike_count",
+    "name": "不喜欢数"
+  },
+  {
+    "value": "favorite_count",
+    "name": "收藏数"
+  },
+  {
+    "value": "comment_count",
+    "name": "评论数"
+  },
+  {
+    "value": "digg_count",
+    "name": "顶数"
+  },
+  {
+    "value": "bury_count",
+    "name": "踩数"
+  },
+  {
+    "value": "share_count",
+    "name": "总分享数"
+  },
+  {
+    "value": "share_qzone_count",
+    "name": "分享(QQ空间)"
+  },
+  {
+    "value": "share_qq_count",
+    "name": "分享(QQ)"
+  },
+  {
+    "value": "share_weixin_count",
+    "name": "分享(微信)"
+  },
+  {
+    "value": "share_wx_moments_count",
+    "name": "分享(微信朋友圈)"
+  },
+  {
+    "value": "share_only_count",
+    "name": "分享(微博人人腾讯微博)"
+  },
+  {
+    "value": "share_system_count",
+    "name": "分享(短信邮件)"
+  }
+]

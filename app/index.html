@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="app.css">
 
   <!--external-->
+  <link rel="stylesheet" href="components/lib/angular-tags/angular-tags.css">
   <link rel="stylesheet" href="components/lib/multi-select/isteven-multi-select.css">
 
   <!--directives-->
@@ -22,7 +23,7 @@
   <link rel="stylesheet" href="components/core/search-box/search-box.css">
 
   <!--ui bootstrap-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="components/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!--views-->
   <link rel="stylesheet" href="tasks/tasks.css">
@@ -53,7 +54,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li ng-class="{ active: isActive('/tasks')}"><a href="#/tasks">任务列表 <span class="sr-only">(current)</span></a></li>
-          <li ng-class="{ active: isActive('/')}"><a href="#/">文章统计</a></li>
+          <li ng-class="{ active: isActive('/group-stat')}"><a href="#/group-stat">文章统计</a></li>
           <li ng-class="{ active: isActive('/group-query')}"><a href="#/group-query">文章查询</a></li>
           <li ng-class="{ active: isActive('/')}"><a href="#">相关关键词</a></li>
           <li ng-class="{ active: isActive('/')}"><a href="#">用户统计</a></li>
@@ -69,8 +70,12 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  
   <script src="app.js"></script>
   <script src="navbar/navbar.js"></script>
+  <script src="group-stat/group-stat.js"></script>
   <script src="group-query/group-query.js"></script>
   <script src="tasks/tasks.js"></script>
   <script src="components/version/version.js"></script>
@@ -80,9 +85,11 @@
   <!--external-->
   <script src="components/lib/multi-select/isteven-multi-select.directive.js"></script>
   <script src="components/lib/checklist-model/checklist-model.directive.js"></script>
+  <script src="components/lib/angular-tags/angular-tags.directive.js"></script>
 
   <!--directives-->
   <script src="components/selector/config.js"></script>
+  <script src="components/selector/options.factory.js"></script>
   <script src="components/selector/selector.directive.js"></script>
   <script src="components/job/config.js"></script>
   <script src="components/job/job-list.directive.js"></script>
@@ -92,7 +99,7 @@
   <script src="components/checkbox-group/checkbox-group.directive.js"></script>
 
   <!--ui bootstrap-->
-  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+  <script src="components/lib/bootstrap/ui-bootstrap.js"></script>
 
 </body>
 </html>

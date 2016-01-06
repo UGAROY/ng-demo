@@ -1,18 +1,65 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <strong class="panel-title">文章查询</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <fieldset>
 
-<!--<h2>年龄选择器示例</h2>-->
-<!--<selector all-values="ages" selected-values="selected.ages"></selector>-->
-<!--<hr>-->
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">任务名称</label>
+                <div class="col-md-6">
+                  <input type="text" placeholder="文章查询" class="form-control input-md" required="">
+                </div>
+              </div>
 
-<h2>多项选择示例</h2>
-<selector all-values="mobiles" selected-values="selected.mobiles"></selector>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">起始时间</label>
+                <div class="col-md-6">
+                  <input type="text" placeholder="" class="form-control input-md">
+                </div>
+              </div>
 
-<hr>
-<h2>单选示例</h2>
-<selector all-values="categories" selected-values="selected.category" mode="single"></selector>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">结束时间</label>
+                <div class="col-md-6">
+                  <input type="text" placeholder="" class="form-control input-md">
+                </div>
+              </div>
 
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">查询文章数</label>
+                <div class="col-md-6">
+                  <input type="number" min="0" class="form-control input-md">
+                </div>
+              </div>
 
-<hr>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">结果排序</label>
+                <div class="col-md-6">
+                  <selector ng-if="orderFields.$resolved" all-options="orderFields" selected-values="model.orderField" mode="single"></selector>
+                  <label>
+                    <input type="checkbox">
+                    从小到大
+                  </label>
+                </div>
+              </div>
 
-<h2>多选框示例</h2>
-<checkbox-group all-values="aggregations" selected-values="selected.aggregations"></checkbox-group>
-
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam blanditiis deleniti, ea est fugit id illo laboriosam minus molestiae nesciunt nostrum praesentium quam reiciendis repellat, rerum soluta, sunt!</p>
+    </div>
+  </div>
+</div>

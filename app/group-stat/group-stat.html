@@ -1,10 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <strong class="panel-title">文章统计</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <fieldset>
 
-</body>
-</html>
+              <!-- 任务名称 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">任务名称</label>
+                <div class="col-md-6">
+                  <input type="text" class="form-control input-md" placeholder="文章统计" ng-model="task_desc">
+                </div>
+              </div>
+
+              <!-- 起始时间 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">起始时间</label>
+                <div class="col-md-6">
+                  <input type="text" class="form-control input-md" ng-model="model.begin_time">
+                </div>
+              </div>
+
+              <!-- 结束时间 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">结束时间</label>
+                <div class="col-md-6">
+                  <input type="text" class="form-control input-md" ng-model="model.end_time">
+                </div>
+              </div>
+
+              <!-- 时间段 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">时间段</label>
+                <div class="col-md-6">
+                  <selector ng-if="times.$resolved" all-options="times" selected-values="model.stat_date_range"
+                            mode="single"></selector>
+                </div>
+              </div>
+
+              <!-- 结果聚合 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">结果聚合</label>
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_keyword"> 按关键词聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_category"> 按文章类别聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_age"> 按用户年龄聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_gender"> 按用户性别聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_province"> 按用户省份聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_city"> 按用户城市聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_media_id"> 按PGC账号聚合 </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" ng-model="model.group_by_source"> 按文章来源聚合 </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 查询文章数 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">查询文章数</label>
+                <div class="col-md-6">
+                  <input type="number" min="0" class="form-control input-md" ng-model="model.limit">
+                </div>
+              </div>
+
+              <!-- 结果排序 -->
+              <div class="form-group">
+                <label class="col-md-4 control-label">结果排序</label>
+                <div class="col-md-6">
+                  <selector ng-if="orderFields.$resolved" all-options="orderFields" selected-values="model.order_by"
+                            mode="single" max-height="250px"></selector>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <strong class="panel-title">文章筛选条件</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <fieldset>
+
+              <!-- 文章ID -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">文章ID</label>
+                <div class="col-md-7">
+                  <tags data-model="model.gids"></tags>
+                </div>
+              </div>
+
+              <!-- 关键词 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">关键词</label>
+                <div class="col-md-7">
+                  <label class="checkbox-inline"><input type="checkbox" ng-model="model.match_title">新闻标题</label>
+                  <label class="checkbox-inline"><input type="checkbox" ng-model="model.match_content">新闻正文</label>
+                  <label class="checkbox-inline"><input type="checkbox" ng-model="model.match_keywords">新闻关键词</label>
+                  <tags data-model="model.keywords"></tags>
+                </div>
+              </div>
+
+              <!-- 文章类别 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">文章类别</label>
+                <div class="col-md-7">
+                  <selector ng-if="groupCategories.$resolved" max-height="250px"
+                            all-options="groupCategories" selected-values="model.group_categories"></selector>
+                </div>
+              </div>
+
+              <!-- PCG账号 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">PGC账号</label>
+                <div class="col-md-7">
+                  <tags data-model="model.media_ids"></tags>
+                </div>
+              </div>
+
+              <!-- 文章来源 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">文章来源</label>
+                <div class="col-md-7">
+                  <tags data-model="model.sources"></tags>
+                </div>
+              </div>
+
+              <!-- 文章构成 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">文章构成</label>
+                <div class="col-md-7">
+                  <label class="checkbox-inline"><input type="checkbox" ng-model="model.is_video">视频类文章</label>
+                  <label class="checkbox-inline"><input type="checkbox" ng-model="model.is_pic">图片类文章</label>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <strong class="panel-title">用户筛选条件</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <fieldset>
+              <!-- 用户ID -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户ID</label>
+                <div class="col-md-7">
+                  <tags data-model="model.user_ids"></tags>
+                </div>
+              </div>
+
+              <!-- 用户年龄 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户年龄</label>
+                <div class="col-md-7">
+                  <selector ng-if="userAges.$resolved"
+                            all-options="userAges" selected-values="model.user_ages"></selector>
+                </div>
+              </div>
+
+              <!-- 用户性别 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户性别</label>
+                <div class="col-md-7">
+                  <selector ng-if="userGenders.$resolved"
+                            all-options="userGenders" selected-values="model.user_genders"></selector>
+                </div>
+              </div>
+
+              <!-- 用户省份 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户省份</label>
+                <div class="col-md-7">
+                  <selector ng-if="userProvinces.$resolved" max-height="250px"
+                            all-options="userProvinces" selected-values="model.user_provinces"></selector>
+                </div>
+              </div>
+
+              <!-- 用户城市 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户城市</label>
+                <div class="col-md-7">
+                  <selector ng-if="userCities.$resolved" max-height="250px"
+                            all-options="userCities" selected-values="model.user_cities"></selector>
+                </div>
+              </div>
+
+              <!-- 用户手机品牌 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户手机品牌</label>
+                <div class="col-md-7">
+                  <selector ng-if="userPhoneBrands.$resolved" max-height="250px"
+                            all-options="userPhoneBrands" selected-values="model.user_phone_brands"></selector>
+                </div>
+              </div>
+
+              <!-- 用户手机系列 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户手机系列</label>
+                <div class="col-md-7">
+                  <selector ng-if="userPhoneSeries.$resolved" max-height="250px"
+                            all-options="userPhoneSeries" selected-values="model.user_phone_series"></selector>
+                </div>
+              </div>
+
+              <!--用户兴趣类别-->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户兴趣类别</label>
+                <div class="col-md-7">
+                  <selector ng-if="userLikeCategories.$resolved" max-height="250px"
+                            all-options="userLikeCategories" selected-values="model.user_like_categories"></selector>
+                </div>
+              </div>
+
+              <!-- 用户兴趣关键词 -->
+              <div class="form-group">
+                <label class="col-md-3 control-label">用户兴趣关键词</label>
+                <div class="col-md-7">
+                  <tags data-model="model.user_like_keywords"></tags>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

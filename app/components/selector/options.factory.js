@@ -1,3 +1,7 @@
-/**
- * Created by yu on 16/1/6.
- */
+angular.module('index.selector')
+  .factory('Options', ['$resource',
+    function ($resource) {
+      return $resource('options/:optionId.json', {}, {
+        query: {method: 'GET', params: {}, isArray: true}
+      });
+    }]);

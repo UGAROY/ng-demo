@@ -1,0 +1,18 @@
+[
+  {
+    "value": "total",
+    "name": "整体"
+  },
+  {
+    "value": "daily",
+    "name": "按天"
+  },
+  {
+    "value": "weekly",
+    "name": "按周"
+  },
+  {
+    "value": "monthly",
+    "name": "按月"
+  }
+]

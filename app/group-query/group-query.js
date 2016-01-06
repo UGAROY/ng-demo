@@ -9,7 +9,7 @@ angular.module('indexApp.group-query', ['ngRoute'])
   });
 }])
 
-.controller('GroupQueryCtrl', ['$scope', function($scope) {
+.controller('GroupQueryCtrl', ['$scope', 'Options', function($scope, Options) {
   $scope.ages = ['0-18', '18-23', '24-30', '31-40', '41-50', '>50', '未知'];
 
   $scope.mobiles = [
@@ -84,5 +84,7 @@ angular.module('indexApp.group-query', ['ngRoute'])
     mobiles: [],
     aggregation: []
   };
+
+  $scope.orderFields = Options.query({optionId: 'orderFields'});
 
 }]);

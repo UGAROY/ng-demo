@@ -1,0 +1,110 @@
+[
+  {
+    "value": "苹果",
+    "name": "苹果"
+  },
+  {
+    "value": "三星",
+    "name": "三星"
+  },
+  {
+    "value": "华为",
+    "name": "华为"
+  },
+  {
+    "value": "小米",
+    "name": "小米"
+  },
+  {
+    "value": "魅族",
+    "name": "魅族"
+  },
+  {
+    "value": "中兴",
+    "name": "中兴"
+  },
+  {
+    "value": "一加",
+    "name": "一加"
+  },
+  {
+    "value": "努比亚",
+    "name": "努比亚"
+  },
+  {
+    "value": "朵唯",
+    "name": "朵唯"
+  },
+  {
+    "value": "联想",
+    "name": "联想"
+  },
+  {
+    "value": "锤子",
+    "name": "锤子"
+  },
+  {
+    "value": "酷派",
+    "name": "酷派"
+  },
+  {
+    "value": "金立",
+    "name": "金立"
+  },
+  {
+    "value": "乐视",
+    "name": "乐视"
+  },
+  {
+    "value": "索尼",
+    "name": "索尼"
+  },
+  {
+    "value": "小辣椒",
+    "name": "小辣椒"
+  },
+  {
+    "value": "华硕",
+    "name": "华硕"
+  },
+  {
+    "value": "天语",
+    "name": "天语"
+  },
+  {
+    "value": "摩托罗拉",
+    "name": "摩托罗拉"
+  },
+  {
+    "value": "OPPO",
+    "name": "OPPO"
+  },
+  {
+    "value": "VIVO",
+    "name": "VIVO"
+  },
+  {
+    "value": "ZUK",
+    "name": "ZUK"
+  },
+  {
+    "value": "HTC",
+    "name": "HTC"
+  },
+  {
+    "value": "LG",
+    "name": "LG"
+  },
+  {
+    "value": "TCL",
+    "name": "TCL"
+  },
+  {
+    "value": "其他",
+    "name": "其他"
+  },
+  {
+    "value": "未知",
+    "name": "未知"
+  }
+]

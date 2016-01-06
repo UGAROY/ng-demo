@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('index.selector', [
+    'ngResource',
     'isteven-multi-select'
   ])
 

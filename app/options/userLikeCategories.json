@@ -1,0 +1,162 @@
+[
+  {
+    "name": "情感",
+    "value": "emotion"
+  },
+  {
+    "name": "健康",
+    "value": "news_health"
+  },
+  {
+    "name": "生活",
+    "value": "news_life"
+  },
+  {
+    "name": "法律",
+    "value": "news_law"
+  },
+  {
+    "name": "女性",
+    "value": "news_lady"
+  },
+  {
+    "name": "汽车",
+    "value": "news_car"
+  },
+  {
+    "name": "动漫",
+    "value": "news_comic"
+  },
+  {
+    "name": "时尚",
+    "value": "news_fashion"
+  },
+  {
+    "name": "搞笑",
+    "value": "funny"
+  },
+  {
+    "name": "文化",
+    "value": "news_culture"
+  },
+  {
+    "name": "正能量",
+    "value": "positive"
+  },
+  {
+    "name": "星座",
+    "value": "news_astrology"
+  },
+  {
+    "name": "科技",
+    "value": "news_tech"
+  },
+  {
+    "name": "军事",
+    "value": "news_military"
+  },
+  {
+    "name": "商业",
+    "value": "business"
+  },
+  {
+    "name": "家居",
+    "value": "news_home"
+  },
+  {
+    "name": "政务",
+    "value": "government"
+  },
+  {
+    "name": "育儿",
+    "value": "news_baby"
+  },
+  {
+    "name": "天气",
+    "value": "news_weather"
+  },
+  {
+    "name": "自然",
+    "value": "news_nature"
+  },
+  {
+    "name": "国内",
+    "value": "news_politics"
+  },
+  {
+    "name": "辟谣",
+    "value": "rumor"
+  },
+  {
+    "name": "数码",
+    "value": "digital"
+  },
+  {
+    "name": "教育",
+    "value": "news_edu"
+  },
+  {
+    "name": "财经",
+    "value": "news_finance"
+  },
+  {
+    "name": "游戏",
+    "value": "news_game"
+  },
+  {
+    "name": "体育",
+    "value": "news_sports"
+  },
+  {
+    "name": "本地",
+    "value": "news_local"
+  },
+  {
+    "name": "购物",
+    "value": "news_shopping"
+  },
+  {
+    "name": "历史",
+    "value": "news_history"
+  },
+  {
+    "name": "美食",
+    "value": "news_food"
+  },
+  {
+    "name": "国际",
+    "value": "news_world"
+  },
+  {
+    "name": "娱乐",
+    "value": "news_entertainment"
+  },
+  {
+    "name": "职场",
+    "value": "career"
+  },
+  {
+    "name": "养生",
+    "value": "news_regimen"
+  },
+  {
+    "name": "社会",
+    "value": "news_society"
+  },
+  {
+    "name": "房地产",
+    "value": "news_house"
+  },
+  {
+    "name": "旅游",
+    "value": "news_travel"
+  },
+  {
+    "name": "减肥",
+    "value": "fitness"
+  },
+  {
+    "name": "电影",
+    "value": "movie"
+  }
+]
