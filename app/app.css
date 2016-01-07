@@ -12,3 +12,7 @@
   /*temporary fix, the new bootstrap css display the img in navbar as block*/
   display: inline-block !important;
 }
+
+.clicky {
+  cursor: pointer;
+}

@@ -98,9 +98,9 @@
     <div class="col-md-6">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <strong class="panel-title">文章筛选条件</strong>
+          <strong class="panel-title"><a class="clicky" ng-click="expandArticleFilter = !expandArticleFilter">文章筛选条件</a></strong>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" ng-show="expandArticleFilter">
           <form class="form-horizontal">
             <fieldset>
 
@@ -163,9 +163,9 @@
       </div>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <strong class="panel-title">用户筛选条件</strong>
+          <strong class="panel-title"><a class="clicky" ng-click="expandUserFilter=!expandUserFilter">用户筛选条件</a></strong>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" ng-show="expandUserFilter">
           <form class="form-horizontal">
             <fieldset>
               <!-- 用户ID -->

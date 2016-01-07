@@ -11,6 +11,9 @@ angular.module('indexApp.group-stat', ['ngRoute'])
 
   .controller('GroupStatCtrl', ['$scope', 'Options', function ($scope, Options) {
 
+    $scope.expandUserFilter = false;
+    $scope.expandArticleFilter = false;
+
     $scope.model = {
       gids: [],
       keywords: [],
